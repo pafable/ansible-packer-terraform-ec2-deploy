@@ -1,6 +1,8 @@
 # Using Ansible, Packer, Terraform to Create AWS EC2 Instances
 
-1. Edit `secrets.json` in packer folder, give your AMI a name and AWS region to use. I'm using `us-west-1` region in this example.
+1. Edit `secrets.json`. 
+
+In the packer folder, give your AMI a name and AWS region to use. I'm using `us-west-1` region in this example.
 
 _NOTE:_ The timestamp (epoch format) will be appended to the name of the AMI.
 
