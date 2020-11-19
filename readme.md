@@ -7,6 +7,7 @@ _NOTE:_ The timestamp (epoch format) will be appended to the name of the AMI.
 EX: `my-ami-1605800314` 
 
 2. Build AMI image.
+
 Packer is configured to use the latest Amazon Linux 2 AMI (HVM and ebs backed) as the base for my AMI.
 ```
 cd packer
