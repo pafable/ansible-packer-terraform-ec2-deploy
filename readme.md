@@ -2,7 +2,7 @@
 
 **1. Edit `secrets.json`.** 
 
-In the packer folder, give your AMI a name and AWS region to use. I'm using `us-west-1` region in this example.
+In the packer folder edit `secrets.json`, give your AMI a name and AWS region to use. I'm using `us-west-1` region in this example.
 
 _NOTE:_ The timestamp (epoch format) will be appended to the name of the AMI.
 
@@ -18,7 +18,7 @@ packer build -var-file secrets.json ami.json
 
 **3. Edit `secrets.tfvars`.** 
 
-Inside of the terraform folder, I'm using `us-west-1` as the region in this example. Change this depending on the region you're deploying to.
+Inside of the terraform folder, edit `secrets.tfvars`. I'm using `us-west-1` as the region in this example. Change this depending on the region you're deploying to.
 Supply the following:
 - AWS ID
 - SSH Key name
