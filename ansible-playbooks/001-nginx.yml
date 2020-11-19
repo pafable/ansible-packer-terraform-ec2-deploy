@@ -1,0 +1,17 @@
+---
+- name: Install and start nginx
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+  tasks:
+   - name: Downloading nginx
+     yum:
+       name: nginx
+       state: latest
+       update_cache: yes       
+  
+   - name: Starting nginx
+     service: 
+       name: nginx
+       state: started
+       enabled: yes

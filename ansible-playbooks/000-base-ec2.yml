@@ -1,0 +1,43 @@
+---
+- name: Configuring EC2
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+  tasks: 
+   - name: Upgrading packages
+     yum:
+       name: "*"
+       state: latest
+
+   - name: Installing epel
+     shell: amazon-linux-extras install epel -y
+  
+   - name: Installing net-tools
+     yum:
+       name: net-tools
+       state: latest
+       update_cache: yes  
+
+   - name: Installing vim
+     yum:
+       name: vim
+       state: latest
+       update_cache: yes  
+
+   - name: Installing tmux
+     yum:
+       name: tmux
+       state: latest
+       update_cache: yes  
+
+   - name: Installing lynx
+     yum:
+       name: lynx
+       state: latest
+       update_cache: yes
+
+   - name: Installing wget
+     yum:
+       name: wget
+       state: latest
+       update_cache: yes  
