@@ -12,6 +12,7 @@ variable "region" {}
 variable "aws_id" {}
 variable "key" {}
 variable "aws_sg" {}
+variable "ami-name" {}
 
 provider "aws" {
   region = var.region
@@ -22,7 +23,7 @@ data "aws_ami" "amzl2" {
 
   filter {
     name   = "name"
-    values = ["test-amzn2-*"]
+    values = ["${var.ami-name}-*"]
   }
 
   filter {
