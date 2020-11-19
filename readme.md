@@ -16,7 +16,8 @@ packer build -var-file secrets.json ami.json
 Supply the following:
 - AWS ID
 - SSH Key name
-- Desired security to use   
+- Desired security to use
+- AMI name (use the same name you specified in `secrets.json`)
 
 4. Build the EC2 instance.
 ```
