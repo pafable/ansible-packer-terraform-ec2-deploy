@@ -8,9 +8,6 @@
      yum:
        name: "*"
        state: latest
-
-   - name: Installing epel
-     shell: amazon-linux-extras install epel -y
   
    - name: Installing net-tools
      yum:
