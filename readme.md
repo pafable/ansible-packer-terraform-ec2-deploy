@@ -1,5 +1,8 @@
 # Using Ansible, Packer, Terraform to Create AWS EC2 Instances
 
+## Project Objective
+The objective of this project is to create AMI using Packer, then use Terraform to provision EC2 instances, and finally Ansible to configure the instances instead of writing shell scripts.
+
 **1. Edit `secrets.json`.** 
 
 In the packer folder edit `secrets.json`, give your AMI a name and AWS region to use. I'm using `us-west-1` region in this example.
