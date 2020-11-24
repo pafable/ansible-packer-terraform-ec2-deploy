@@ -31,5 +31,6 @@ Supply the following:
 **4. Build the EC2 instance.**
 ```
 cd terraform
+terraform init
 terraform plan -var-file secrets.tfvars -out apply.tfplan
 terraform apply apply.tfplan
