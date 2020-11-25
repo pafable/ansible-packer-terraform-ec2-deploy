@@ -46,7 +46,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [var.aws_sg]
 
 	user_data = <<EOF
-		#! /bin/bash
+		#!/bin/bash
     ansible-playbook /tmp/ansible-playbooks/001-nginx.yml
 	EOF
 
